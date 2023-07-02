@@ -1,10 +1,15 @@
 import openai
+import os
 from decouple import config
 
 from functions.database import get_recent_messages
 
 # Retrieve Enviornment Variables
 openai.api_key = config("OPENAI_API_KEY")
+
+
+# os.environ['OPENAI_API_BASE'] = "https://api.ai-yyds.com/v1"
+# os.environ['OPENAI_API_KEY'] = "sk-gt4GSEcL4ZGkmlCy3d12BcAb348e4dE983D63f8f619aFc76"
 
 
 # Open AI - Whisper
