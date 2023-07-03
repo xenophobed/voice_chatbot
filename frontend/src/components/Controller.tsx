@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Title from "./title"
 
 function Controller(){
 
@@ -11,7 +12,7 @@ function Controller(){
 
     return (
         <div className="h-screen, overflow-y-hidden">
-            <div>Title</div>
+            <Title setMessages={setMessages} />
             <div className="flex flex-col justify-between h-full overflow-y-scroll underline pd-96">
                 Placeholder
             </div>
